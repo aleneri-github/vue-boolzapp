@@ -84,3 +84,40 @@ img.avatar {
   color: #B1B1B1;
   margin: 10px;
 }
+
+#nuovi-messaggi {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 65px;
+  padding: 0 15px;
+  background-color: #8EDAFC;
+}
+
+#volume-off {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+}
+
+.fa-volume-mute {
+  color: #8EDAFC;
+  font-size: 22px;
+}
+
+#span-notifiche {
+  font-size: 12px;
+  color: #2E4551;
+}
+
+#notifiche-desktop {
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #669FBC;
+}
