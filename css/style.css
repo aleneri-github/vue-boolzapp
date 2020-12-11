@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 95vh;
   background-image: url('../img/sfondo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ i {
 }
 
 #wrap {
-  height: 95%;
+  height: 98%;
   width: 80%;
   margin: 20px auto;
 }
