@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -15,6 +16,17 @@ body {
 content: "";
 display: table;
 clear: both;
+}
+
+.avatar-name {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+i {
+  margin: 7px;
+  color: #B1B1B1;
+  cursor: pointer;
 }
 
 #wrap {
@@ -44,15 +56,25 @@ clear: both;
 }
 
 #left-header-left, #right-header-left  {
+  display: flex;
+  align-items: center;
   float: left;
   height: 100%;
   width: 50%;
-  background-color: red;
+  padding: 5px 10px;
 }
 
 #left-header-right, #right-header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   float: right;
   height: 100%;
   width: 50%;
-  background-color: green;
+  border-right: 1px solid lightgrey;
+  padding: 5px 10px;
+}
+
+img.avatar {
+  height: 35px;
 }
