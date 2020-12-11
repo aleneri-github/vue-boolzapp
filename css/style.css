@@ -20,6 +20,19 @@ clear: both;
 #wrap {
   height: 95%;
   width: 80%;
-  background-color: yellow;
   margin: 20px auto;
+}
+
+#left-wrap {
+  float: left;
+  height: 100%;
+  width: 35%;
+  background-color: blue;
+}
+
+#right-wrap {
+  float: left;
+  height: 100%;
+  width: 65%;
+  background-color: coral;
 }
