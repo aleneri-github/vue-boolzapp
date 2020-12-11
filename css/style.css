@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 95vh;
+  height: 97vh;
   background-image: url('../img/sfondo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,7 +46,6 @@ i {
   float: right;
   height: 100%;
   width: 65%;
-  background-color: coral;
 }
 
 #left-header, #right-header {
@@ -89,7 +88,7 @@ img.avatar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 65px;
+  height: 10%;
   padding: 0 15px;
   background-color: #8EDAFC;
 }
@@ -124,7 +123,7 @@ img.avatar {
 
 #search {
   width: 100%;
-  height: 40px;
+  height: 8%;
 }
 
 #icon-search {
@@ -149,6 +148,19 @@ img.avatar {
 }
 
 #chat-list {
-  height: 75.7%;
-  overflow-y: scroll;  
+  height: 74%;
+  overflow-y: scroll;
+}
+
+#chat {
+  width: 100%;
+  height: 83%;
+  background-image: url('../img/sfondo-chat.jpg');
+  overflow-y: scroll;
+}
+
+#input-chat {
+  width: 100%;
+  height: 9%;
+  background-color: white;
 }
