@@ -39,7 +39,7 @@ i {
   float: left;
   height: 100%;
   width: 35%;
-  background-color: white; 
+  background-color: white;
 }
 
 #right-wrap {
@@ -146,4 +146,9 @@ img.avatar {
   height: 40px;
   color: grey;
   font-size: 11px;
+}
+
+#chat-list {
+  height: 75.7%;
+  overflow-y: scroll;  
 }
