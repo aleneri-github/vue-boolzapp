@@ -31,8 +31,28 @@ clear: both;
 }
 
 #right-wrap {
-  float: left;
+  float: right;
   height: 100%;
   width: 65%;
   background-color: coral;
+}
+
+#left-header, #right-header {
+  width: 100%;
+  height: 8%;
+  background-color: #EAEAEA;
+}
+
+#left-header-left, #right-header-left  {
+  float: left;
+  height: 100%;
+  width: 50%;
+  background-color: red;
+}
+
+#left-header-right, #right-header-right {
+  float: right;
+  height: 100%;
+  width: 50%;
+  background-color: green;
 }
