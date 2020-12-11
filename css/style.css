@@ -154,13 +154,42 @@ img.avatar {
 
 #chat {
   width: 100%;
-  height: 83%;
+  height: 85%;
   background-image: url('../img/sfondo-chat.jpg');
   overflow-y: scroll;
 }
 
 #input-chat {
+  display: flex;
   width: 100%;
-  height: 9%;
+  height: 7%;
   background-color: white;
+}
+
+#smile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  color: grey;
+  background-color: white;
+}
+
+#input-chat input {
+  width: 80%;
+  outline: none;
+  border: 0;
+  padding: 10px;
+}
+
+#microphone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  background-color: white;
+}
+
+.fa-smile, .fa-microphone {
+  color: grey;
 }
