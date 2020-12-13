@@ -153,16 +153,43 @@ img.avatar {
   overflow-y: scroll;
 }
 
-#chat-list ul li {
-  display: flex;
-  align-items: center;
-  border-top: 1px solid lightgrey;
+#chat-list .contact {
   height: 60px;
-  padding: 15px;
+  border-bottom: 1px solid lightgrey;
 }
 
-#chat-list ul li span {
-  margin-left: 25px;
+.avatar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+
+.contact-info {
+  float: right;
+  height: 100%;
+  width: 80%;
+}
+
+.cont-info-left {
+  float: left;
+  height: 100%;
+  padding: 5px;
+}
+.cont-info-left .mess {
+  font-size: 10px;
+  color: lightgrey;
+}
+
+.cont-info-right {
+  float: right;
+  height: 100%;
+  padding: 5px;
+  font-size: 10px;
+  color: lightgrey;
+  text-align: right;
 }
 
 #chat {

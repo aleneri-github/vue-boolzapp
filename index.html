@@ -42,15 +42,32 @@
 
         <div id="root">
           <div id="chat-list">
-            <ul v-for= "contact in contacts">
-              <li>
-                <img class="avatar" v-bind:src="contact.avatar">
-                <span>{{contact.name}}</span> 
+            <div v-for= "contact in contacts">
+              <div class="contact clearfix">
+                <div class="avatar-box">
+                  <img class="avatar" v-bind:src="contact.avatar">
+                </div>
+                <div class="contact-info clearfix">
+                  <div class="cont-info-left">
+                    <span>{{contact.name}}</span> <br>
+                    <span class="mess">
+                      {{contact.messages[contact.messages.length-1].text}}
 
-              </li>
+                    </span>
+                  </div>
+                  <div class="cont-info-right">
+
+                    {{contact.messages[contact.messages.length-1].date}}
 
 
-            </ul>
+                  </div>
+
+                </div>
+
+              </div class="contact">
+
+
+            </div>
 
           </div>
 

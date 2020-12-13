@@ -41,7 +41,7 @@ var app = new Vue({
 			},
 			{
 				date: '20/03/2020 16:35:00',
-				text: 'Mi piacerebbe ma devo andare a fare la spesa.',
+				text: 'Devo andare a fare la spesa.',
 				status: 'sent'
 			}
 		],
