@@ -43,8 +43,12 @@
         <div id="root">
           <div id="chat-list">
             <ul v-for= "contact in contacts">
-              <img class="avatar" v-bind:src="contact.avatar">
-              {{contact.name}} 
+              <li>
+                <img class="avatar" v-bind:src="contact.avatar">
+                <span>{{contact.name}}</span> 
+
+              </li>
+
 
             </ul>
 
