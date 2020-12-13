@@ -3,8 +3,8 @@ var app = new Vue({
   data: {
     contacts: [
 	{
-		name: 'Michele',
-		avatar: '_1',
+		name: 'Silvia',
+		avatar: 'img/avatar-2.png',
 		visible: true,
 		messages: [
 			{
@@ -26,7 +26,7 @@ var app = new Vue({
 	},
 	{
 		name: 'Fabio',
-		avatar: '_2',
+		avatar: 'img/avatar-1.png',
 		visible: true,
 		messages: [
 			{
@@ -48,7 +48,7 @@ var app = new Vue({
 	},
 	{
 		name: 'Samuele',
-		avatar: '_3',
+		avatar: 'img/avatar-3.png',
 		visible: true,
 		messages: [
 			{
@@ -70,7 +70,7 @@ var app = new Vue({
 	},
 	{
 		name: 'Luisa',
-		avatar: '_4',
+		avatar: 'img/avatar-4.png',
 		visible: true,
 		messages: [
 			{
