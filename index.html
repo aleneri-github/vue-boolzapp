@@ -10,37 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Boolzapp</title>
   </head>
-  <body>
-    <div id="wrap" class="clearfix">
-      <div id="left-wrap">
-        <div id="left-header" class="clearfix">
-          <div id="left-header-left">
-            <img class="avatar" src="img/avatar-5.png" alt="avatar">
-            <span class="avatar-name">Alessandro Neri</span>
+  <div id="root">
+    <body>
+      <div id="wrap" class="clearfix">
+        <div id="left-wrap">
+          <div id="left-header" class="clearfix">
+            <div id="left-header-left">
+              <img class="avatar" src="img/avatar-5.png" alt="avatar">
+              <span class="avatar-name">Alessandro Neri</span>
+            </div>
+            <div id="left-header-right">
+              <i class="fas fa-redo"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
           </div>
-          <div id="left-header-right">
-            <i class="fas fa-redo"></i>
-            <i class="fas fa-comment-alt"></i>
-            <i class="fas fa-ellipsis-v"></i>
+          <div id="nuovi-messaggi">
+            <div id="volume-off">
+              <i class="fas fa-volume-mute"></i>
+            </div>
+            <div id="notifiche">
+              <span id="span-notifiche">Ricevi notifiche di nuovi messaggi</span> <br>
+              <span id="notifiche-desktop">Attiva notifiche desktop</span>
+            </div>
           </div>
-        </div>
-        <div id="nuovi-messaggi">
-          <div id="volume-off">
-            <i class="fas fa-volume-mute"></i>
+          <div id="search" class="clearfix">
+            <div id="icon-search">
+              <i class="fas fa-search"></i>
+            </div>
+            <input class="chat-search" type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
           </div>
-          <div id="notifiche">
-            <span id="span-notifiche">Ricevi notifiche di nuovi messaggi</span> <br>
-            <span id="notifiche-desktop">Attiva notifiche desktop</span>
-          </div>
-        </div>
-        <div id="search" class="clearfix">
-          <div id="icon-search">
-            <i class="fas fa-search"></i>
-          </div>
-          <input class="chat-search" type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
-        </div>
 
-        <div id="root">
           <div id="chat-list">
             <div v-for= "contact in contacts">
               <div class="contact clearfix">
@@ -52,86 +52,75 @@
                     <span>{{contact.name}}</span> <br>
                     <span class="mess">
                       {{contact.messages[contact.messages.length-1].text}}
-
                     </span>
                   </div>
                   <div class="cont-info-right">
-
                     {{contact.messages[contact.messages.length-1].date}}
-
-
                   </div>
-
                 </div>
-
               </div class="contact">
-
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-      <div id="right-wrap">
-        <div id="right-header" class="clearfix">
-          <div id="right-header-left">
-            <img class="avatar" src="img/avatar-2.png" alt="avatar">
-            <div id="wrap-avatar-info">
-              <span class="avatar-name">Silvia</span> <br>
-              <span id="ultimo-accesso">Ultimo accesso oggi alle 15:55</span>
-            </div>
-          </div>
-          <div id="right-header-right">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-paperclip"></i>
-            <i class="fas fa-ellipsis-v"></i>
-          </div>
-        </div>
-        <div id="chat" class="clearfix">
-          <div id="chat-left">
-            <div class="box-message box-message-received">
-              <div class="box-message-top">
-                Tutto fatto!
-              </div>
-              <div class="box-message-bottom">
-                10/12/2020 15:59
-              </div>
-            </div>
-          </div>
-          <div id="chat-right">
-            <div class="box-message box-message-send">
-              <div class="box-message-top">
-                Hai portato a spasso il cane?
-              </div>
-              <div class="box-message-bottom">
-                10/12/2020 15:50
-              </div>
-            </div>
-            <div class="box-message box-message-send">
-              <div class="box-message-top">
-                Ricordati di dargli da mangiare
-              </div>
-              <div class="box-message-bottom">
-                10/12/2020 15:51
-              </div>
             </div>
           </div>
         </div>
-        <div id="input-chat">
-          <div id="smile">
-            <i class="far fa-smile"></i>
+        <div id="right-wrap">
+          <div id="right-header" class="clearfix">
+            <div id="right-header-left">
+              <img class="avatar" src="img/avatar-2.png" alt="avatar">
+              <div id="wrap-avatar-info">
+                <span class="avatar-name">Silvia</span> <br>
+                <span id="ultimo-accesso">Ultimo accesso oggi alle 15:55</span>
+              </div>
+            </div>
+            <div id="right-header-right">
+              <i class="fas fa-search"></i>
+              <i class="fas fa-paperclip"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
           </div>
-          <input type="text" name="" value="" placeholder="Scrivi un messaggio">
-          <div id="microphone">
-            <i class="fas fa-microphone"></i>
+          <div id="chat" class="clearfix">
+            <div id="chat-left">
+              <div class="box-message box-message-received">
+                <div class="box-message-top">
+                  Tutto fatto!
+                </div>
+                <div class="box-message-bottom">
+                  10/12/2020 15:59
+                </div>
+              </div>
+            </div>
+            <div id="chat-right">
+              <div class="box-message box-message-send">
+                <div class="box-message-top">
+                  Hai portato a spasso il cane?
+                </div>
+                <div class="box-message-bottom">
+                  10/12/2020 15:50
+                </div>
+              </div>
+              <div class="box-message box-message-send">
+                <div class="box-message-top">
+                  Ricordati di dargli da mangiare
+                </div>
+                <div class="box-message-bottom">
+                  10/12/2020 15:51
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="input-chat">
+            <div id="smile">
+              <i class="far fa-smile"></i>
+            </div>
+            <input type="text" name="" value="" placeholder="Scrivi un messaggio">
+            <div id="microphone">
+              <i class="fas fa-microphone"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </body>
+  </div>
 
+  <script src="js/script.js" charset="utf-8"></script>
 
-    <script src="js/script.js" charset="utf-8"></script>
-
-  </body>
 </html>
