@@ -39,9 +39,15 @@
           </div>
           <input class="chat-search" type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
         </div>
-        <div id="chat-list">
 
-        
+        <div id="root">
+          <div id="chat-list">
+            <ul v-for= "contact in contacts">
+              {{contact.name}}
+
+            </ul>
+
+          </div>
 
         </div>
       </div>
