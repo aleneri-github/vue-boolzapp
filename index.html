@@ -78,34 +78,38 @@
             </div>
           </div>
           <div id="chat" class="clearfix">
-            <div id="chat-left">
-              <div class="box-message box-message-received">
-                <div class="box-message-top">
+            <div v-for= "contact in contacts">
+              <div id="chat-left">
+                <div class="box-message box-message-received">
+                  <div class="box-message-top">
 
-                </div>
-                <div class="box-message-bottom">
+                  </div>
+                  <div class="box-message-bottom">
 
+                  </div>
                 </div>
               </div>
+              <div id="chat-right">
+                <div class="box-message box-message-send">
+                  <div class="box-message-top">
+
+                  </div>
+                  <div class="box-message-bottom">
+
+                  </div>
+                </div>
+                <div class="box-message box-message-send">
+                  <div class="box-message-top">
+
+                  </div>
+                  <div class="box-message-bottom">
+
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <div id="chat-right">
-              <div class="box-message box-message-send">
-                <div class="box-message-top">
-
-                </div>
-                <div class="box-message-bottom">
-
-                </div>
-              </div>
-              <div class="box-message box-message-send">
-                <div class="box-message-top">
-
-                </div>
-                <div class="box-message-bottom">
-                  
-                </div>
-              </div>
-            </div>
+            
           </div>
           <div id="input-chat">
             <div id="smile">
