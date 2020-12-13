@@ -42,8 +42,8 @@
           </div>
 
           <div id="chat-list">
-            <div v-for= "contact in contacts">
-              <div class="contact clearfix">
+            <div v-for= "(contact, index) in contacts">
+              <div @click="select-contact" class="contact clearfix">
                 <div class="avatar-box">
                   <img class="avatar" v-bind:src="contact.avatar">
                 </div>
