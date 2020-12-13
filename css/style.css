@@ -156,6 +156,7 @@ img.avatar {
 #chat-list .contact {
   height: 60px;
   border-bottom: 1px solid lightgrey;
+  cursor: pointer;
 }
 
 .avatar-box {
