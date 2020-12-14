@@ -43,7 +43,7 @@
 
           <div id="chat-list">
             <div v-for= "(contact, index) in contacts">
-              <div @click="select-contact" class="contact clearfix">
+              <div @click="selectContact" class="contact clearfix">
                 <div class="avatar-box">
                   <img class="avatar" v-bind:src="contact.avatar">
                 </div>
@@ -79,11 +79,12 @@
           </div>
           <div id="chat" class="clearfix">
 
-            <div v-for= "contact in contacts">
+            <div v-for= "(key, index) in contacts">
 
               <div id="chat-left">
                 <div class="box-message box-message-received">
                   <div class="box-message-top">
+                      
 
                   </div>
                   <div class="box-message-bottom">
