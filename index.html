@@ -110,7 +110,7 @@
             <div id="smile">
               <i class="far fa-smile"></i>
             </div>
-            <input type="text" name="" value="" placeholder="Scrivi un messaggio">
+              <input v-model="userMessage" type="text" v-on:keyup.enter="addMessage">
             <div id="microphone">
               <i class="fas fa-microphone"></i>
             </div>
