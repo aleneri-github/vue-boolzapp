@@ -43,7 +43,8 @@
 
           <div id="chat-list">
             <div v-for= "(contact, index) in contacts">
-              <div @click="selectContact" class="contact clearfix">
+
+              <div @click="selectContact(index)" class="contact clearfix">
                 <div class="avatar-box">
                   <img class="avatar" v-bind:src="contact.avatar">
                 </div>
@@ -79,12 +80,13 @@
           </div>
           <div id="chat" class="clearfix">
 
-            <div v-for= "(key, index) in contacts">
+            <div v-for= "(message, index) in contacts[activeIndex].messages">
 
-              <div id="chat-left">
+              <div id="chat-left" v-if="message.status === 'received'">
                 <div class="box-message box-message-received">
-                  <div class="box-message-top">
-                      
+                  <div class="box-message-top" >
+                    {{message.text}}
+
 
                   </div>
                   <div class="box-message-bottom">
@@ -92,9 +94,10 @@
                   </div>
                 </div>
               </div>
-              <div id="chat-right">
+              <div id="chat-right" v-if="message.status === 'sent'">
                 <div class="box-message box-message-send">
-                  <div class="box-message-top">
+                  <div class="box-message-top" >
+                    {{ message.text }}
                   </div>
                   <div class="box-message-bottom">
                   </div>

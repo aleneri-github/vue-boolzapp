@@ -86,15 +86,14 @@ var app = new Vue({
 		],
 	},
 ],
-methods: {
-  selectContact: function() {
-      
-      }
-
-}
-
-
-
-
+    activeIndex: 0,
+  },
+  methods: {
+    selectContact: function(index) {
+      this.activeIndex = index;
+      console.log("active index", this.activeIndex);
+      console.log(this.contacts[this.activeIndex])
+      // Chat corrente: this.contacts[this.activeIndex]
+    }
   }
 });
