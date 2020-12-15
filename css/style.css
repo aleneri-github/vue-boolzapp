@@ -210,7 +210,7 @@ img.avatar {
 #chat-right {
   width: 50%;
   height: 100%;
-  padding: 10px 350px;
+  padding: 10px 345px;
 }
 
 .box-message {
@@ -219,6 +219,7 @@ img.avatar {
   height: 80px;
   border-radius: 10px;
   box-shadow: 2px 2px lightgrey;
+  font-size: 18px;
 }
 
 .box-message-top {
@@ -234,6 +235,7 @@ img.avatar {
   padding-right: 10px;
   color: grey;
   text-align: right;
+  font-size: 12px;
 }
 
 .box-message-received {
