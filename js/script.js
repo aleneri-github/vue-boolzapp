@@ -97,7 +97,7 @@ var app = new Vue({
     },
     addMessage: function() {
       var newObject = {
-        date: '28/03/2020 16:15:22',
+        date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
         text: this.userMessage,
         status: 'sent'
       }
@@ -106,7 +106,7 @@ var app = new Vue({
 
       setTimeout(function() {
         var newAutoObject = {
-          date: '28/03/2020 16:15:22',
+          date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
           text: 'ok',
           status: 'received'
         };
