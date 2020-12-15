@@ -99,11 +99,12 @@ var app = new Vue({
       var newObject = {
         date: '28/03/2020 16:15:22',
         text: this.userMessage,
-        status: 'send'
+        status: 'sent'
       }
       this.contacts[this.activeIndex].messages.push(newObject);
       this.userMessage = "";
       console.log(newObject);
+      console.log(this.contacts[this.activeIndex].messages);
 
     },
   },
