@@ -86,6 +86,7 @@ var app = new Vue({
 	  }],
     activeIndex: 0,
     userMessage: "",
+
   },
   methods: {
     selectContact: function(index) {
@@ -95,9 +96,15 @@ var app = new Vue({
       // Chat corrente: this.contacts[this.activeIndex]
     },
     addMessage: function() {
-      const input = this.userMessage;
+      var newObject = {
+        date: '28/03/2020 16:15:22',
+        text: this.userMessage,
+        status: 'send'
+      }
+      this.contacts[this.activeIndex].messages.push(newObject);
       this.userMessage = "";
-      console.log(input);
+      console.log(newObject);
+
     },
   },
 });
