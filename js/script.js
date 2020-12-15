@@ -119,10 +119,7 @@ var app = new Vue({
 
       const name = this.nameContact;
       this.nameContact = "";
-      const contactsName = this.contacts;
-      console.log(contactsName);
-      const check = name.includes(contactsName)
-      console.log(check);
+      console.log(name);
     }
   },
 });
