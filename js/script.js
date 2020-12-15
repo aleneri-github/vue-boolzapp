@@ -8,7 +8,7 @@ var app = new Vue({
   		messages: [
   			{
   				date: '10/01/2020 15:30:55',
-  				text: 'Hai portato a spasso il cane?',
+  				text: 'Hai portato a spasso Chicco?',
   				status: 'sent'
   			},
   			{

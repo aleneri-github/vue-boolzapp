@@ -160,6 +160,10 @@ img.avatar {
   cursor: pointer;
 }
 
+#chat-list .contact.active {
+  background-color: #E9EBEB;
+}
+
 .avatar-box {
   display: flex;
   justify-content: center;
@@ -182,7 +186,7 @@ img.avatar {
 }
 .cont-info-left .mess {
   font-size: 10px;
-  color: lightgrey;
+  color: grey;
 }
 
 .cont-info-right {
@@ -239,12 +243,10 @@ img.avatar {
 }
 
 .box-message-received {
-  /* float: right; */
   background-color: white;
 }
 
 .box-message-send {
-  /* float: right; */
   background-color: #D5F9BA;
 }
 
