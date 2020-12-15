@@ -103,9 +103,15 @@ var app = new Vue({
       }
       this.contacts[this.activeIndex].messages.push(newObject);
       this.userMessage = "";
-      console.log(newObject);
-      console.log(this.contacts[this.activeIndex].messages);
 
+      setTimeout(function() {
+        var newAutoObject = {
+          date: '28/03/2020 16:15:22',
+          text: 'ok',
+          status: 'received'
+        };
+        app.contacts[app.activeIndex].messages.push(newAutoObject);
+      }, 1000);
     },
   },
 });
