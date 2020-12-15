@@ -116,15 +116,13 @@ var app = new Vue({
     },
 
     searchContact: function() {
-      name = this.nameContact;
+
+      const name = this.nameContact;
       this.nameContact = "";
-
-      console.log(name);
-
-
+      const contactsName = this.contacts;
+      console.log(contactsName);
+      const check = name.includes(contactsName)
+      console.log(check);
     }
-
-
-
   },
 });

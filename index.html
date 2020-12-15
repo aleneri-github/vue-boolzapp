@@ -67,9 +67,9 @@
         <div id="right-wrap">
           <div id="right-header" class="clearfix">
             <div id="right-header-left">
-              <img class="avatar" src="img/avatar-2.png" alt="avatar">
+              <img class="avatar" :src="contacts[activeIndex].avatar" alt="avatar">
               <div id="wrap-avatar-info">
-                <span class="avatar-name">Silvia</span> <br>
+                <span class="avatar-name">{{contacts[activeIndex].name}}</span> <br>
                 <span id="ultimo-accesso">Ultimo accesso oggi alle 15:55</span>
               </div>
             </div>
