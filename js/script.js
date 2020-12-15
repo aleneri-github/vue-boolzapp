@@ -85,8 +85,8 @@ var app = new Vue({
   		],
 	  }],
     activeIndex: 0,
+    nameContact: "",
     userMessage: "",
-
   },
   methods: {
     selectContact: function(index) {
@@ -95,6 +95,7 @@ var app = new Vue({
       console.log(this.contacts[this.activeIndex])
       // Chat corrente: this.contacts[this.activeIndex]
     },
+
     addMessage: function() {
       var newObject = {
         date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
@@ -113,5 +114,17 @@ var app = new Vue({
         app.contacts[app.activeIndex].messages.push(newAutoObject);
       }, 1000);
     },
+
+    searchContact: function() {
+      name = this.nameContact;
+      this.nameContact = "";
+
+      console.log(name);
+
+
+    }
+
+
+
   },
 });

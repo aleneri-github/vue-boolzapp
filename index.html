@@ -39,7 +39,7 @@
             <div id="icon-search">
               <i class="fas fa-search"></i>
             </div>
-            <input class="chat-search" type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
+            <input v-model="nameContact" v-on:keyup.enter="searchContact" class="chat-search" type="text"  placeholder="Cerca o inizia una nuova chat">
           </div>
 
           <div id="chat-list">
