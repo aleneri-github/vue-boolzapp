@@ -39,11 +39,11 @@
             <div id="icon-search">
               <i class="fas fa-search"></i>
             </div>
-            <input v-model="nameContact" v-on:keyup.enter="searchContact" class="chat-search" type="text"  placeholder="Cerca o inizia una nuova chat">
+            <input v-model="nameContact" v-on:keyup="searchContact" class="chat-search" type="text" placeholder="Cerca o inizia una nuova chat">
           </div>
 
           <div id="chat-list">
-            <div v-for= "(contact, index) in contacts">
+            <div v-for= "(contact, index) in contacts" v-if="contact.visible">
 
               <div @click="selectContact(index)" class="contact clearfix" v-bind:class="(index == activeIndex) ? 'active' : ''">
                 <div class="avatar-box">

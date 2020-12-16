@@ -4,7 +4,7 @@ var app = new Vue({
     contacts: [{
   		name: 'Silvia',
   		avatar: 'img/avatar-2.png',
-  		visible: false,
+  		visible: true,
   		messages: [
   			{
   				date: '10/01/2020 15:30:55',
@@ -26,7 +26,7 @@ var app = new Vue({
 	  {
   		name: 'Fabio',
   		avatar: 'img/avatar-1.png',
-  		visible: false,
+  		visible: true,
   		messages: [
   			{
   				date: '20/03/2020 16:30:00',
@@ -48,7 +48,7 @@ var app = new Vue({
 	  {
   		name: 'Samuele',
   		avatar: 'img/avatar-3.png',
-  		visible: false,
+  		visible: true,
   		messages: [
   			{
   				date: '28/03/2020 10:10:40',
@@ -70,7 +70,7 @@ var app = new Vue({
 	  {
   		name: 'Luisa',
   		avatar: 'img/avatar-4.png',
-  		visible: false,
+  		visible: true,
   		messages: [
   			{
   				date: '10/01/2020 15:30:55',
@@ -87,6 +87,7 @@ var app = new Vue({
     activeIndex: 0,
     nameContact: "",
     userMessage: "",
+
   },
   methods: {
     selectContact: function(index) {
@@ -116,10 +117,15 @@ var app = new Vue({
     },
 
     searchContact: function() {
-
-      const name = this.nameContact;
-      this.nameContact = "";
-      console.log(name);
+      this.contacts.forEach(
+        (element) => {
+          if (element.name.toLowerCase().includes(this.nameContact.toLowerCase())) {
+            element.visible = true;
+          } else {
+            element.visible = false;
+          }
+        }
+      );
     }
   },
 });
