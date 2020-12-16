@@ -70,7 +70,7 @@
               <img class="avatar" :src="contacts[activeIndex].avatar" alt="avatar">
               <div id="wrap-avatar-info">
                 <span class="avatar-name">{{contacts[activeIndex].name}}</span> <br>
-                <span id="ultimo-accesso">Ultimo accesso oggi alle 15:55</span>
+                <span id="ultimo-accesso">{{'Ultimo accesso '}}{{contacts[activeIndex].messages[contacts[activeIndex].messages.length-1].date}}</span>
               </div>
             </div>
             <div id="right-header-right">
